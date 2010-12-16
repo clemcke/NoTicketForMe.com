@@ -1,11 +1,29 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.3'
+gem 'mysql'
+gem 'heroku'
+gem 'devise', '>= 1.1'
+
+group :test do
+  gem 'rspec-rails', '>= 2.0'
+end
+
+group :cucumber do 
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'cucumber-rails'
+  gem 'cucumber' 
+  gem 'rspec-rails', '>=2.0'
+  gem 'spork'
+  gem 'launchy'  #So you can do Then show me the page
+  gem 'pickle'
+end
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3-ruby', :require => 'sqlite3'
+#gem 'sqlite3-ruby', :require => 'sqlite3'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -13,9 +31,8 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # Deploy with Capistrano
 # gem 'capistrano'
 
-# To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
+# To use debugger
 # gem 'ruby-debug'
-# gem 'ruby-debug19'
 
 # Bundle the extra gems:
 # gem 'bj'
