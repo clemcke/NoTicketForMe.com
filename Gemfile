@@ -15,6 +15,7 @@ group :cucumber do
   gem 'cucumber-rails'
   gem 'cucumber' 
   gem 'rspec-rails', '>=2.0'
+  gem 'webrat'
   gem 'spork'
   gem 'launchy'  #So you can do Then show me the page
   gem 'pickle'

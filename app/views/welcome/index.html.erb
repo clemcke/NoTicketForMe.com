@@ -1,0 +1,7 @@
+<h1>Welcome to No Ticket For Me</h1>
+<p>More coming soon.</p>
+<% if user_signed_in? %>
+  You are logged in as <%= current_user.email %>
+<% else %>
+  <%= link_to "Sign up for alpha account here.", new_user_registration_path %>
+<% end %>
