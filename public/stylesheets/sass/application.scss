@@ -1,0 +1,39 @@
+body {
+  background-image:url('/images/bg.png');
+}
+img {
+  border-style: none;
+}
+.header {
+  margin-bottom: 10px;
+}
+.tabs {
+  font-family: Georgia;
+  font-size: 14pt;
+  font-weight: bold;
+  width: 100%;
+  tr {
+    height: 45px;
+
+    td {
+      text-align: center;
+      background:  #e7e2d3;
+      padding: 0px;
+      height: 45px;
+      a {
+        color: #000;
+	text-decoration: none;
+      }
+      &.active{
+        background: #d9d3bf;
+        a{
+          color: #c2120f;
+        }
+      }
+      &.hover{
+        color: #000;
+	background: #c0b899;
+      }
+    }
+  }
+}

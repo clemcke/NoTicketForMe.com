@@ -1,0 +1,31 @@
+body {
+  background-image: url("/images/bg.png"); }
+
+img {
+  border-style: none; }
+
+.header {
+  margin-bottom: 10px; }
+
+.tabs {
+  font-family: Georgia;
+  font-size: 14pt;
+  font-weight: bold;
+  width: 100%; }
+  .tabs tr {
+    height: 45px; }
+    .tabs tr td {
+      text-align: center;
+      background: #e7e2d3;
+      padding: 0px;
+      height: 45px; }
+      .tabs tr td a {
+        color: #000;
+        text-decoration: none; }
+      .tabs tr td.active {
+        background: #d9d3bf; }
+        .tabs tr td.active a {
+          color: #c2120f; }
+      .tabs tr td.hover {
+        color: #000;
+        background: #c0b899; }

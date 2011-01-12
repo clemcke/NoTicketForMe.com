@@ -1,0 +1,14 @@
+.body
+  .container_12
+    .header
+      = link_to image_tag('weblogo.png'), root_path
+    .main_panel
+      %table.tabs{:cellspacing => 0,:cellpadding => 0,:align => 'center'}
+        %tr
+          %td.nav_tab.active=link_to "Why Join?", root_path
+          %td.nav_tab=link_to "Report a Save", root_path
+          %td.nav_tab=link_to "Know the Laws", root_path
+          %td.nav_tab=link_to "Contests", root_path
+          %td.nav_tab=link_to "Our Ten Commandments", root_path
+          %td.nav_tab=link_to "Contact Us", root_path
+      = image_tag 'mainimg1.png'
