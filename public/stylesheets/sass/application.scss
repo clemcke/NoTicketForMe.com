@@ -1,5 +1,6 @@
 body {
-  background-image:url('/images/bg.png');
+  font-family: Georgia1, Georgia, serif; 
+  background: url('/images/bg.png') fixed;
 }
 img {
   border-style: none;
@@ -8,10 +9,10 @@ img {
   margin-bottom: 10px;
 }
 .tabs {
-  font-family: Georgia;
   font-size: 14pt;
   font-weight: bold;
   width: 100%;
+  margin-bottom: 5px;
   tr {
     height: 45px;
 
@@ -36,4 +37,50 @@ img {
       }
     }
   }
+}
+.formtastic {
+  list-style-type: none;
+  &.user {
+    background: url('/images/signuptab.png') no-repeat;
+    width: 320px;
+    height: 76px;
+    display: block;
+    position: relative;
+    top: -9px;
+    float: right;
+    label {
+      padding-right: 10px;
+      text-align: right;
+      display: inline-block;
+      width: 120px;
+      color: #e7e3d2;
+    }
+    input {
+      background: #e7e2d3;
+      border: 0;
+      width: 160px;
+      height: 15px;
+      margin: 10px 5px 0;
+    }
+  }
+}
+.signup_link{
+  display: block;
+  float: right;
+  clear: right;
+  position: relative;
+  top: -9px;
+  padding-right: 20px;
+  a {
+    font-weight: bold;
+    color: #4e0706;
+    text-decoration: none;
+  }
+}
+.logo {
+  display: block;
+  float: left;
+}
+.clearboth {
+  clear: both;
 }

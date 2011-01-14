@@ -5,6 +5,7 @@ gem 'heroku'
 gem 'devise', '>= 1.1'
 gem 'sqlite3-ruby'
 gem 'haml'
+gem 'formtastic'
 
 group :test do
   gem 'rspec-rails', '>= 2.0'
