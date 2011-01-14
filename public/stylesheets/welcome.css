@@ -1,0 +1,21 @@
+.learn_more {
+  padding-top: 20px; }
+  .learn_more img {
+    display: block;
+    float: left;
+    margin-right: 43px; }
+  .learn_more .learn_more_blurb a {
+    display: block;
+    float: left;
+    position: relative;
+    top: 40px;
+    background: url("/images/learnmoreheadline.png") no-repeat;
+    margin-left: 10px;
+    padding: 15px;
+    height: 76px;
+    width: 181px;
+    letter-spacing: 0.8em;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14pt; }
