@@ -4,7 +4,7 @@
     float: left;
     margin-right: 43px;
   }
-  padding-top: 20px;
+  padding: 20px 0 10px;
   .learn_more_blurb a {
     display: block;
     float: left;
@@ -24,4 +24,11 @@
       background: url('/images/learnmoreheadlinehov.png') no-repeat;
     }
   }
+}
+.first_ticket{
+  background: #e7e2d3;
+  padding: 20px 0;
+  color: #4e0706;
+  font: Georgia;
+  font-size: 20px;
 }

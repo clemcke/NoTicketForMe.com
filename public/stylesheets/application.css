@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   font-family: Georgia1, Georgia, serif;
   background: url("/images/bg.png") fixed; }
 
@@ -72,3 +73,12 @@ img {
 
 .clearboth {
   clear: both; }
+
+.footer {
+  background: #4e0706;
+  padding: 0 0 40px; }
+  .footer .tabs td {
+    font-size: 11pt;
+    background: #4e0706; }
+    .footer .tabs td a {
+      color: #e7e3d2; }
