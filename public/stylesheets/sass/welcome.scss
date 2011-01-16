@@ -20,5 +20,8 @@
     text-decoration: none;
     font-weight: bold;
     font-size: 14pt;
+    &.hover {
+      background: url('/images/learnmoreheadlinehov.png') no-repeat;
+    }
   }
 }

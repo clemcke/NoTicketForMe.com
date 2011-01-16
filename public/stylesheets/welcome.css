@@ -14,8 +14,10 @@
     padding: 15px;
     height: 76px;
     width: 181px;
-    letter-spacing: 0.8em;
+    letter-spacing: -1px;
     color: #000;
     text-decoration: none;
     font-weight: bold;
     font-size: 14pt; }
+    .learn_more .learn_more_blurb a.hover {
+      background: url("/images/learnmoreheadlinehov.png") no-repeat; }
