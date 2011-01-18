@@ -1,5 +1,5 @@
 .learn_more {
-  padding: 20px 0 10px; }
+  padding: 25px 0; }
   .learn_more img {
     display: block;
     float: left;
@@ -24,7 +24,26 @@
 
 .first_ticket {
   background: #e7e2d3;
-  padding: 20px 0;
+  padding: 40px 0;
   color: #4e0706;
   font: Georgia;
   font-size: 20px; }
+
+.why_join {
+  padding-top: 80px;
+  font: Georgia;
+  font-size: 18px; }
+  .why_join .text {
+    padding: 0 90px 0 310px; }
+    .why_join .text .title {
+      font-size: 30px; }
+  .why_join img {
+    float: left; }
+  .why_join .join_today {
+    padding: 10px 0; }
+    .why_join .join_today a {
+      text-decoration: none;
+      color: #000;
+      font: Georgia;
+      font-size: 30px;
+      font-weight: bold; }
