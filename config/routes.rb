@@ -1,5 +1,7 @@
 Noticketforme::Application.routes.draw do
   get "welcome/index"
+  match "welcome/ten_commandments"
+  match "welcome/contests"
 
   devise_for :users
 

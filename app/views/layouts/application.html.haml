@@ -23,7 +23,17 @@
       %td.nav_tab=link_to "Why Join?", root_path + "#why_join"
       %td.nav_tab=link_to "Report a Save", root_path
       %td.nav_tab=link_to "Know the Laws", root_path
-      %td.nav_tab=link_to "Contests", root_path
-      %td.nav_tab=link_to "Our Ten Commandments", root_path
+      %td.nav_tab=link_to "Contests", welcome_contests_path
+      %td.nav_tab=link_to "Our Ten Commandments", welcome_ten_commandments_path 
       %td.nav_tab=link_to "Contact Us", root_path
 = yield
+.footer
+  .container_12
+    %table.tabs{:cellspacing => 0,:cellpadding => 0,:align => 'center'}
+      %tr
+        %td.footer_tab=link_to "ABOUT US", root_path
+        %td.footer_tab=link_to "REPORT A SAVE", root_path
+        %td.footer_tab=link_to "LEARN THE LAWS", root_path
+        %td.footer_tab=link_to "MONTHLY CONTESTS", welcome_contests_path
+        %td.footer_tab=link_to "ADDITIONAL INFO", root_path
+        %td.footer_tab=link_to "CONTACT US", root_path

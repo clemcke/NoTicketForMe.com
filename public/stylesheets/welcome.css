@@ -29,14 +29,17 @@
   font: Georgia;
   font-size: 20px; }
 
+.title {
+  margin: 10px 0;
+  font-size: 30px;
+  line-height: 1.1em; }
+
 .why_join {
   padding-top: 80px;
   font: Georgia;
   font-size: 18px; }
   .why_join .text {
     padding: 0 90px 0 310px; }
-    .why_join .text .title {
-      font-size: 30px; }
   .why_join img {
     float: left; }
   .why_join .join_today {
@@ -47,3 +50,16 @@
       font: Georgia;
       font-size: 30px;
       font-weight: bold; }
+
+.ten_commandments, .contests {
+  font: Georgia;
+  font-size: 18px;
+  background: #e7e2d3;
+  padding: 5px 20px 20px 20px;
+  width: 920px;
+  margin: 20px auto 40px;
+  line-height: 1.5em; }
+  .ten_commandments h2, .contests h2 {
+    color: #c2120f; }
+  .ten_commandments li, .contests li {
+    margin-bottom: .5em; }
