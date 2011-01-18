@@ -6,14 +6,10 @@ body {
 img {
   border-style: none; }
 
-.header {
-  margin-bottom: 10px; }
-
 .tabs {
   font-size: 14pt;
   font-weight: bold;
-  width: 100%;
-  margin-bottom: 5px; }
+  width: 100%; }
   .tabs tr {
     height: 45px; }
     .tabs tr td {
