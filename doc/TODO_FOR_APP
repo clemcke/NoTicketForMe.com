@@ -10,8 +10,6 @@ user profile
   - link to edit password
 add email notification when saved
 
-add mailing address collection to user
-
 add activated field to users, appropriate error when logging in unactivated.
 implement paypal "add button"
 implement ipn server process:
@@ -22,7 +20,9 @@ implement ipn server process:
     -include link to profile page
   shipping as a separate email?
 
-get mailer up and running
+get mailer up and running on heroku
+
+-----------------------------
 
 payments.ntfm@gmail.com
 bigal123
