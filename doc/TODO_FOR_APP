@@ -3,6 +3,9 @@ report a save:
 - code
 - notes/location
 
+create reports_controller
+  - new
+
 view your saves/times saved
 user profile
   - view your saves
@@ -22,6 +25,9 @@ implement ipn server process:
 
 get mailer up and running on heroku
 
+fix links on site
+fix hover effect on tabs
+replace main image
 -----------------------------
 
 payments.ntfm@gmail.com

@@ -1,4 +1,10 @@
 Noticketforme::Application.routes.draw do
+  get "reports/create"
+
+  get "reports/new"
+
+  get "reports/show"
+
   get "welcome/index"
   match "welcome/ten_commandments"
   match "welcome/contests"
