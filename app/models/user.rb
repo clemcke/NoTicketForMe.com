@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :name, :address1, :address2, :city, :state, :zipcode
   validates_presence_of :name, :address1, :city, :state, :zipcode
   validates_format_of :zipcode, :with => /^(\d{5}|\d{5}\-\d{4})/
 
