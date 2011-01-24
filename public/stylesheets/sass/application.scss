@@ -37,12 +37,11 @@ img {
 }
 .login {
   list-style-type: none;
-  background: url("'/images/loggedintab.png'") no-repeat;
+  background: url('/images/signuptab.png') no-repeat;
   width: 320px;
-  height: 76px;
+  height: 105px;
   display: block;
   position: relative;
-  top: -9px;
   float: right;
   label {
     padding-right: 10px;
@@ -51,12 +50,22 @@ img {
     width: 120px;
     color: #e7e3d2;
   }
-  input {
+  input[type="text"],input[type="password"] {
     background: #e7e2d3;
     border: 0;
     width: 160px;
     height: 15px;
     margin: 10px 5px 0;
+  }
+  input[type="submit"] {
+    background: url('/images/loginbtn.png');
+    height: 33px;
+    width: 82px;
+    float: right;
+    margin: 5px 15px 0;
+    padding: 0;
+    border: none;
+    -webkit-box-sizing: border-box;
   }
 }
 .logged_in {
@@ -79,7 +88,6 @@ img {
   float: right;
   clear: right;
   position: relative;
-  top: -9px;
   padding-right: 20px;
   a {
     font-weight: bold;

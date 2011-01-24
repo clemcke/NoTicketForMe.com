@@ -1,0 +1,23 @@
+report a save:
+- date
+- code
+- notes/location
+
+view your saves/times saved
+user profile
+
+add zipcode collection to user
+
+add email notification when saved
+
+add activated field to users, appropriate error when logging in unactivated.
+
+implement paypal "add button"
+
+implement ipn server process:
+  recieve ipn
+  verifiy ipn
+  activate account
+  send activation email
+    -include link to profile page
+  shipping as a separate email?
