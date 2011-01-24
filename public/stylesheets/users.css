@@ -10,3 +10,14 @@
     color: #c2120f; }
   .confirmations li, .passwords li, .unlocks li, .sessions li, .registrations li {
     margin-bottom: .5em; }
+
+.registrations .formtastic {
+  list-style-type: none; }
+  .registrations .formtastic label {
+    width: 200px;
+    display: block; }
+  .registrations .formtastic input[type="email"], .registrations .formtastic input[type="password"], .registrations .formtastic input[type="text"] {
+    width: 300px; }
+  .registrations .formtastic .inline-errors {
+    margin-top: 2px;
+    color: #C2120F; }

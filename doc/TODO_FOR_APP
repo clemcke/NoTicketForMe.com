@@ -5,15 +5,15 @@ report a save:
 
 view your saves/times saved
 user profile
-
-add zipcode collection to user
-
+  - view your saves
+  - view times saved
+  - link to edit password
 add email notification when saved
 
+add mailing address collection to user
+
 add activated field to users, appropriate error when logging in unactivated.
-
 implement paypal "add button"
-
 implement ipn server process:
   recieve ipn
   verifiy ipn
@@ -21,3 +21,11 @@ implement ipn server process:
   send activation email
     -include link to profile page
   shipping as a separate email?
+
+get mailer up and running
+
+payments.ntfm@gmail.com
+bigal123
+
+paypal acct: info.ntfm@gmail.com
+service.ntfm@gmail.com

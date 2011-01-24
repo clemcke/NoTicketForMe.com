@@ -13,3 +13,17 @@
     margin-bottom: .5em;
   }
 }
+.registrations .formtastic {
+  list-style-type: none;
+  label {
+    width: 200px;
+    display: block;
+  }
+  input[type="email"],input[type="password"],input[type="text"] {
+    width: 300px;
+  }
+  .inline-errors{
+    margin-top: 2px;
+    color: #C2120F;
+  }
+}
