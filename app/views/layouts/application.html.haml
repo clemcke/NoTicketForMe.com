@@ -11,12 +11,7 @@
 .container_12.header
   .logo
     = link_to image_tag('weblogo.png'), root_path
-  .login
-    = semantic_form_for :user do |form|
-      = form.input :email, :required => false, :label => "email: "
-      = form.input :password, :required => false, :label => "password:"
-  .signup_link
-    = link_to "CLICK HERE TO SIGN UP!", new_user_registration_path
+  = render :partial => "shared/login"
   .clearboth
   %table.tabs{:cellspacing => 0,:cellpadding => 0,:align => 'center'}
     %tr
@@ -26,7 +21,8 @@
       %td.nav_tab=link_to "Contests", welcome_contests_path
       %td.nav_tab=link_to "Our Ten Commandments", welcome_ten_commandments_path 
       %td.nav_tab=link_to "Contact Us", root_path
-= yield
+%div{:class => controller.controller_name }
+  = yield
 .footer
   .container_12
     %table.tabs{:cellspacing => 0,:cellpadding => 0,:align => 'center'}

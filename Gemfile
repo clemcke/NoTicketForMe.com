@@ -11,7 +11,8 @@ group :test do
   gem 'rspec-rails', '>= 2.0'
 end
 
-group :cucumber do 
+group :cucumber do
+  gem 'rcov'
   gem 'capybara'
   gem 'database_cleaner'
   gem 'cucumber-rails'

@@ -1,0 +1,14 @@
+- if user_signed_in?
+  .logged_in
+    Welcome,
+    = link_to current_user.email, edit_user_registration_path
+    %br
+    = link_to "Log out", destroy_user_session_path
+- else
+  .login
+    = semantic_form_for :user, :url => user_session_path do |form|
+      = form.input :email, :required => false, :label => "email: "
+      = form.input :password, :required => false, :label => "password:"
+      = form.submit
+  .signup_link
+    = link_to "CLICK HERE TO SIGN UP!", new_user_registration_path
