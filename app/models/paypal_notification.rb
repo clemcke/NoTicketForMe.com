@@ -83,12 +83,13 @@ class PayPalNotification
   def account
     @ipn['business'] || @ipn['receiver_email']
   end
+
   def raw
     @raw
   end
 
   def acknowledge
-    unless RAILS_ENV=="test"
+    unless Rails.env=="test"
        payload =  @ipn
        response = ssl_post(PAYPAL_URL + '?cmd=_notify-validate', payload,
          'Content-Length' => "#{payload.size}"
