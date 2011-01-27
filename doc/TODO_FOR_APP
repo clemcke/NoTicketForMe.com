@@ -1,3 +1,7 @@
+code system:
+auto generate user code after activation
+validate user code
+
 report a save:
 - date
 - code
@@ -16,8 +20,8 @@ add email notification when saved
 add activated field to users, appropriate error when logging in unactivated.
 implement paypal "add button"
 implement ipn server process:
-  recieve ipn
-  verifiy ipn
+  receive ipn
+  verify ipn
   activate account
   send activation email
     -include link to profile page
@@ -28,6 +32,7 @@ get mailer up and running on heroku
 fix links on site
 fix hover effect on tabs
 replace main image
+add admin panel
 -----------------------------
 
 payments.ntfm@gmail.com

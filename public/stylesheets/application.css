@@ -98,3 +98,6 @@ img {
     background: #4e0706; }
     .footer .tabs td a {
       color: #e7e3d2; }
+
+.formtastic {
+  list-style-type: none; }

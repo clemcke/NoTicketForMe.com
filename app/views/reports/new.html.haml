@@ -1,0 +1,12 @@
+.container_12
+  %h1 Report a Save
+
+  = semantic_form_for @report do |form|
+    = form.label :date
+    \:
+    =# form.date_select :date, :order => [:month, :day, :year], :start_year => Time.now.year - 1,
+                              :end_year => Time.now.year, :include_blank => false
+    = form.input :date, :as => :date
+    = form.input :code, :label => "Code on parked car: ", :required => false
+    = form.input :notes, :label => "Location of car and notes about the save: ", :required => false
+    = form.submit "Report a Save"

@@ -7,6 +7,10 @@ gem 'sqlite3-ruby'
 gem 'haml'
 gem 'formtastic'
 
+group :development do
+  gem 'ruby-debug'
+end
+
 group :test do
   gem 'rspec-rails', '>= 2.0'
 end

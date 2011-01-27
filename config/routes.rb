@@ -1,13 +1,10 @@
 Noticketforme::Application.routes.draw do
-  get "reports/create"
-
-  get "reports/new"
-
-  get "reports/show"
+  resources :reports
 
   get "welcome/index"
-  match "welcome/ten_commandments"
-  match "welcome/contests"
+  get "welcome/ten_commandments"
+  get "welcome/contests"
+  get "welcome/know_the_laws"
 
   devise_for :users
 

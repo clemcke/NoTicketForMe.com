@@ -1,4 +1,4 @@
-class CreateReports < ActiveRecord::Migration
+chelass CreateReports < ActiveRecord::Migration
   def self.up
     create_table :reports do |t|
       t.date :date
