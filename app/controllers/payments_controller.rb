@@ -1,7 +1,7 @@
 class PaymentsController < ApplicationController
   protect_from_forgery :except => [:ipn]
   def ipn
-    notify = PaypalNotification.new(params)
+    notify = PayPalNotification.new(params)
 
     #verify with paypal
     if notify.acknowledge
