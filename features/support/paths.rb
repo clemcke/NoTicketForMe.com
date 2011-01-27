@@ -10,6 +10,9 @@ module NavigationHelpers
 
     when /the home\s?page/
       '/'
+    when /the new paypal_ipn page/
+      new_paypal_ipn_path
+
     when /register/
       '/users/sign_up'
     when /login/

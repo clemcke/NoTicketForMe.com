@@ -1,6 +1,8 @@
 Noticketforme::Application.routes.draw do
   resources :reports
 
+  post "payments/ipn"
+
   get "welcome/index"
   get "welcome/ten_commandments"
   get "welcome/contests"
