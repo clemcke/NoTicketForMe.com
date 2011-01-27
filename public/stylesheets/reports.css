@@ -10,3 +10,5 @@
     color: #c2120f; }
   .reports li {
     margin-bottom: .5em; }
+  .reports textarea {
+    display: block; }

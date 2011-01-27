@@ -1,7 +1,7 @@
 # Load the rails application
 require File.expand_path('../application', __FILE__)
 
-unless RAILS_ENV == 'production'
+unless Rails.env == 'test'
   PAYPAL_ACCOUNT = "seller_1295625218_biz@gmail.com"
   PAYPAL_URL = "https://sandbox.paypal.com/cgi-bin/webscr"
 else
