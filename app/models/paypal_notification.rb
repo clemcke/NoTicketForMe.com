@@ -3,9 +3,7 @@
 #Also bypassed the acknowledge if environment is "test"
 
 require 'net/http'
-require 'activemerchant'
-class PayPalNotification
-
+class PaypalNotification
   def initialize(params)
     @ipn=params
   end
@@ -90,14 +88,14 @@ class PayPalNotification
   end
 
   def acknowledge
-    unless Rails.env=="test"
-       payload =  @ipn
-       response = ssl_post(PAYPAL_URL + '?cmd=_notify-validate', payload,
-         'Content-Length' => "#{payload.size}"
-       )
-       raise StandardError.new("Faulty paypal result: #{response}") unless ["VERIFIED", "INVALID"].include?(response)
-    end
-    response == "VERIFIED"
+    @ipn
+    http = Net::HTTP.start('www.paypal.com', 80)
+    @query = 'cmd=_notify-validate'
+    @ipn.each_pair {|key, value| @query = @query + '&' + key + '=' + value.first if key != 'register/pay_pal_ipn.html/pay_pal_ipn' }
+    response = http.post('/cgi-bin/webscr?', @query)
+    http.finish
+    puts response.body
+    raise StandardError.new("Faulty paypal result: #{response.body}") unless ["VERIFIED", "INVALID"].include?(response.body)
   end
 
 end
