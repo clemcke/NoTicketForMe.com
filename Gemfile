@@ -6,7 +6,7 @@ gem 'devise', '>= 1.1'
 gem 'sqlite3-ruby'
 gem 'haml'
 gem 'formtastic'
-gem 'active_merchant'
+gem 'activemerchant'
 
 group :development do
   gem 'ruby-debug'

@@ -3,6 +3,7 @@
 #Also bypassed the acknowledge if environment is "test"
 
 require 'net/http'
+require 'activemerchant'
 class PayPalNotification
 
   def initialize(params)
