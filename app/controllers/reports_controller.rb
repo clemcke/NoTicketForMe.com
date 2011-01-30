@@ -17,9 +17,9 @@ class ReportsController < ApplicationController
   def activation_required
     if user_signed_in? && !current_user.activated?
       case current_user.activation.status
-        when :new
+        when "new"
           redirect_to activate_new_path
-        when :in_progress
+        when "in_progress"
           redirect_to activate_in_progress_path
         else
           redirect_to activate_in_progress_path

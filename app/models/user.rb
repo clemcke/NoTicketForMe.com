@@ -17,7 +17,7 @@ class User < ActiveRecord::Base
   STATES = ["AK", "AL", "AR", "AS", "AZ", "CA", "CO", "CT", "DC", "DE", "FL", "FM", "GA", "GU", "HI", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MH", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR", "PA", "PR", "PW", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VI", "VT", "WA", "WI", "WV", "WY"]
 
   def activated?
-    activation.status == :completed
+    activation.status == "completed"
   end
 
   def activate!(paypal_transaction = nil)
@@ -29,7 +29,7 @@ class User < ActiveRecord::Base
   def generate_code!
     charset = %w{ 2 3 4 6 7 9 A C D E F G H J K L M N P Q R T V W X Y Z}
     code = (0...6).map{ charset.to_a[rand(charset.size)] }.join
-    generate_code!if User.find_by_code(code)
+    generate_code! if User.find_by_code(code)
     self.code = code
   end
 end
