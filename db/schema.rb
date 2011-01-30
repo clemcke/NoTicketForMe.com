@@ -10,7 +10,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110124200732) do
+ActiveRecord::Schema.define(:version => 20110130003346) do
+
+  create_table "activations", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "status"
+    t.string   "paypal_transaction"
+    t.datetime "activated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "reports", :force => true do |t|
     t.date     "date"
@@ -22,9 +31,9 @@ ActiveRecord::Schema.define(:version => 20110124200732) do
   end
 
   create_table "users", :force => true do |t|
-    t.string   "email",                               :default => "", :null => false
-    t.string   "encrypted_password",   :limit => 128, :default => "", :null => false
-    t.string   "password_salt",                       :default => "", :null => false
+    t.string   "email",                               :default => "",    :null => false
+    t.string   "encrypted_password",   :limit => 128, :default => "",    :null => false
+    t.string   "password_salt",                       :default => "",    :null => false
     t.string   "reset_password_token"
     t.string   "remember_token"
     t.datetime "remember_created_at"
@@ -41,6 +50,8 @@ ActiveRecord::Schema.define(:version => 20110124200732) do
     t.string   "city"
     t.string   "state"
     t.string   "zipcode"
+    t.string   "code"
+    t.boolean  "activated",                           :default => false
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

@@ -8,6 +8,11 @@ Noticketforme::Application.routes.draw do
   get "welcome/contests"
   get "welcome/know_the_laws"
 
+  get "activate/new"
+  get "activate/in_progress"
+  get "activate/completed"
+  get "activate/reset"
+
   devise_for :users
 
   # The priority is based upon order of creation:

@@ -1,0 +1,12 @@
+.activate {
+  font: Georgia;
+  font-size: 18px;
+  background: #e7e2d3;
+  padding: 5px 20px 20px 20px;
+  width: 920px;
+  margin: 20px auto 40px;
+  line-height: 1.5em; }
+  .activate h2 {
+    color: #c2120f; }
+  .activate .paypal_button {
+    margin: 20px 0 0 150px; }

@@ -1,14 +1,17 @@
 code system:
-auto generate user code after activation
-validate user code
+validate user code on reports
+make sure code is not yours in reports
+require activation before being able to log in
+
 
 report a save:
-- date
-- code
-- notes/location
+- date - required
+- code - required, validated
+- notes/location - required
 
 create reports_controller
   - new
+  - show
 
 view your saves/times saved
 user profile
@@ -17,12 +20,6 @@ user profile
   - link to edit password
 add email notification when saved
 
-add activated field to users, appropriate error when logging in unactivated.
-implement paypal "add button"
-implement ipn server process:
-  receive ipn
-  verify ipn
-  activate account
   send activation email
     -include link to profile page
   shipping as a separate email?
@@ -30,7 +27,7 @@ implement ipn server process:
 get mailer up and running on heroku
 
 fix links on site
-fix hover effect on tabs
+fix hover effect on tabs on homepage
 replace main image
 add admin panel
 -----------------------------

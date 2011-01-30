@@ -1,0 +1,9 @@
+%h1 Your activation is in progress
+%p
+  Thank you for your payment.  Once we receive your payment from paypal, you will receive an email from us confirming your account activation.
+%p
+  If you believe you have reached this page in error, please contact
+  = mail_to "payments.ntfm@gmail.com"
+%p
+  If you have not yet paid for your account,
+  = link_to "click here.", activate_reset_path

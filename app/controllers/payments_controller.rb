@@ -4,13 +4,13 @@ class PaymentsController < ApplicationController
     notify = PaypalNotification.new(params)
 
     #verify with paypal
-    if notify.acknowledge
+    #if notify.acknowledge
       begin
-        u = User.find_by_email("sixtimesnine@gmail.com")
-        u.email = "notified@mail.com"
-        u.save!
+        code = params["custom"]
+        raise "Invalid user code: #{code}" unless u = User.find_by_code(code)
+        u.activate!(:paypal_transaction => params["txn_id"])
       end
-    end
+    #end
 
     render :nothing => true
   end
