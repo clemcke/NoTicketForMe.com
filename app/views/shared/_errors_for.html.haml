@@ -1,0 +1,15 @@
+- unless object.errors.blank?
+  .formErrors{:class => "#{object.class.name.humanize.downcase}Errors"}
+  - if message.blank?
+    %h5
+      There was a problem
+      - if object.new_record?
+        creating
+      - else
+        updating
+      the #{object.class.name.humanize.downcase}
+  - else
+    %h5= message
+  %ul
+    - object.errors.full_messages.each do |error|
+      %li= error

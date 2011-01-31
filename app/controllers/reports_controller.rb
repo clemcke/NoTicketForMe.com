@@ -1,9 +1,10 @@
 class ReportsController < ApplicationController
   before_filter :authenticate_user!, :activation_required
+  before_filter :reporter_required, :only => [:show]
 
   def create
     @report = current_user.reports.new(params[:report])
-    @report.save ? redirect_to(show_report_path(@report)) : render(:action => :new)
+    @report.save ? redirect_to(reports_path(@report)) : render(:action => :new)
   end
 
   def new
@@ -25,5 +26,10 @@ class ReportsController < ApplicationController
           redirect_to activate_in_progress_path
       end
     end
+  end
+
+  def reporter_required
+    @report = Report.find params[:id]
+    redirect_to root_url unless @report.user == current_user
   end
 end

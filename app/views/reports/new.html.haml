@@ -2,6 +2,7 @@
   %h1 Report a Save
 
   = semantic_form_for @report do |form|
+    = render :partial => "shared/errors_for", :locals => {:object => @report, :message => nil}
     = form.label :date
     \:
     = form.date_select :date, :order => [:month, :day, :year], :start_year => Time.now.year - 1,

@@ -1,24 +1,14 @@
-code system:
-validate user code on reports
-make sure code is not yours in reports
-require activation before being able to log in
-
-
-report a save:
-- date - required
-- code - required, validated
-- notes/location - required
-
-create reports_controller
-  - new
-  - show
-
 view your saves/times saved
 user profile
   - view your saves
   - view times saved
   - link to edit password
-add email notification when saved
+  - email notification options
+
+
+add email notification when a report is saved
+  - to reporter
+  - to savee
 
   send activation email
     -include link to profile page
