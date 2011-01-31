@@ -25,6 +25,10 @@ class User < ActiveRecord::Base
     activation.activate!(:paypal_transaction => paypal_transaction)
   end
 
+  def number_of_times_saved
+    Report.find_all_by_code(self.code).count
+  end
+
   private
   def generate_code!
     charset = %w{ 2 3 4 6 7 9 A C D E F G H J K L M N P Q R T V W X Y Z}

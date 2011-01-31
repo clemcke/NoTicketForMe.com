@@ -1,4 +1,6 @@
 Noticketforme::Application.routes.draw do
+  get "profile/index"
+
   resources :reports
 
   post "payments/ipn"
@@ -12,6 +14,8 @@ Noticketforme::Application.routes.draw do
   get "activate/in_progress"
   get "activate/completed"
   get "activate/reset"
+
+  get "profile/index", :as => 'profile'
 
   devise_for :users
 

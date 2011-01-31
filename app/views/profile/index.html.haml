@@ -1,0 +1,10 @@
+%h1  Your Account
+%ul
+  %li
+    Your reported saves:
+    = current_user.reports.count
+  %li
+    Number of times you have been saved:
+    = current_user.number_of_times_saved
+  %li
+    = link_to "Edit your password", edit_user_registration_path
