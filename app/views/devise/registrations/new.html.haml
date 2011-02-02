@@ -3,16 +3,23 @@
 = semantic_form_for resource, :url => registration_path(resource_name) do |form|
   = devise_error_messages!
   %h4 Account information
-  = form.input :email, :label => "Email:", :required => false
-  = form.input :password, :label => "Password:", :required => false
-  = form.input :password_confirmation, :label => "Password confirmation:"
+  = form.input :email, :label => "Email:"
+  = form.input :password, :label => "Password:"
+  = form.input :password_confirmation, :label => "Password confirmation:", :required => true
+  = form.input :how_did_you_hear_about_us, :label => "How did you hear about us?"
   %h4 Mailing Address
-  = form.input :name, :label => "Name:", :required => false
-  = form.input :address1, :label => "Address (line 1):", :required => false
+  = form.input :first_name, :label => "First name:"
+  = form.input :last_name, :label => "Last name:"
+  = form.input :address1, :label => "Address (line 1):"
   = form.input :address2, :label => "Address (line 2):"
-  = form.input :city, :label => "City:", :required => false
-  = form.input :state, :as => :select, :collection => User::STATES, :label => "State:", :required => false, :selected => "CA"
-  = form.input :zipcode, :label => "Zipcode:", :required => false
+  = form.input :city, :label => "City:"
+  = form.input :state, :as => :select, :collection => User::STATES, :label => "State:", :selected => "CA"
+  = form.input :zipcode, :label => "Zipcode:"
+  = form.input :phone, :label => "Phone:"
+  %h4 Legal Stuff
+  = form.input :tos_accepted, :label => "I have read and agree to the NTFM.com Terms of Service"
+  = form.input :email_notification, :label => "I may receive communications from NTFM.copm and can change my notification preferences in my account preferences"
+  = form.input :over_18, :label => "I am at least 18 years old"
 
 
   = form.commit_button :label => "Continue to Paypal Checkout"

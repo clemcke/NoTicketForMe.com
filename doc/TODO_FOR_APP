@@ -1,5 +1,29 @@
-  - email notification options
+USER REGISTRATION
+CHRIS –  – ADD form "How did You Hear About US?"
 
+First Name & Last Name (instead of just NAME)
+
+primary phone number (optional) in sign up
+
+Star for required inputs
+
+Checkbox - "I agree to the Terms and Services of NTFM.com"
+"I may receive communication from NTFM.com and can change notification preferences in my account settings."
+"I am over the age of 18"
+
+Valid Address Checker (Address Validator)
+
+implement captcha
+
+
+BUG – after "proceed to PayPal," go to NEW page (not after-activation page)
+
+CHRIS Constant Contact API??
+
+CHRIS – "Back TO NTFM.com site" from the PayPal Payment Page - automatic?
+
+
+- email notification options on profile page
 
 add email notification when a report is saved
   - to reporter
@@ -8,8 +32,6 @@ add email notification when a report is saved
   send activation email
     -include link to profile page
   shipping as a separate email?
-
-get mailer up and running on heroku
 
 fix links on site
 fix hover effect on tabs on homepage

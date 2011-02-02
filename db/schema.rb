@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110130003346) do
+ActiveRecord::Schema.define(:version => 20110202010447) do
 
   create_table "activations", :force => true do |t|
     t.integer  "user_id"
@@ -31,26 +31,32 @@ ActiveRecord::Schema.define(:version => 20110130003346) do
   end
 
   create_table "users", :force => true do |t|
-    t.string   "email",                               :default => "", :null => false
-    t.string   "encrypted_password",   :limit => 128, :default => "", :null => false
-    t.string   "password_salt",                       :default => "", :null => false
+    t.string   "email",                                    :default => "",    :null => false
+    t.string   "encrypted_password",        :limit => 128, :default => "",    :null => false
+    t.string   "password_salt",                            :default => "",    :null => false
     t.string   "reset_password_token"
     t.string   "remember_token"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",                       :default => 0
+    t.integer  "sign_in_count",                            :default => 0
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "name"
     t.string   "address1"
     t.string   "address2"
     t.string   "city"
     t.string   "state"
     t.string   "zipcode"
     t.string   "code"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "phone"
+    t.boolean  "tos_accepted",                             :default => false
+    t.boolean  "email_notification",                       :default => false
+    t.boolean  "over_18",                                  :default => false
+    t.text     "how_did_you_hear_about_us"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

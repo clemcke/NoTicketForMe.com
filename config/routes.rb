@@ -12,8 +12,8 @@ Noticketforme::Application.routes.draw do
 
   get "activate/new"
   get "activate/in_progress"
-  get "activate/completed"
   get "activate/reset"
+  get "activate/success"
 
   get "profile/index", :as => 'profile'
 
