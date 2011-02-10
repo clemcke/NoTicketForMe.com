@@ -5,23 +5,17 @@ First Name & Last Name (instead of just NAME)
 
 primary phone number (optional) in sign up
 
-Star for required inputs
 
 Checkbox - "I agree to the Terms and Services of NTFM.com"
 "I may receive communication from NTFM.com and can change notification preferences in my account settings."
 "I am over the age of 18"
 
 Valid Address Checker (Address Validator)
+check out google maps geolocating api
 
 implement captcha
 
-
 BUG – after "proceed to PayPal," go to NEW page (not after-activation page)
-
-CHRIS Constant Contact API??
-
-CHRIS – "Back TO NTFM.com site" from the PayPal Payment Page - automatic?
-
 
 - email notification options on profile page
 
