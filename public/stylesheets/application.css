@@ -27,6 +27,12 @@ img {
       .tabs tr td.hover {
         color: #000;
         background: #c0b899; }
+  .tabs.members_only td {
+    background: none; }
+    .tabs.members_only td a {
+      color: #4E0706; }
+      .tabs.members_only td a:hover {
+        color: #c2120f; }
 
 .login {
   list-style-type: none;

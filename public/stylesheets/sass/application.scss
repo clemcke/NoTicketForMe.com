@@ -34,6 +34,17 @@ img {
       }
     }
   }
+  &.members_only {
+    td {
+      background: none;
+      a {
+        color:#4E0706;
+        &:hover{
+          color: #c2120f;
+        }
+      }
+    }
+  }
 }
 .login {
   list-style-type: none;

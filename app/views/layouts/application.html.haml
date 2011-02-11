@@ -13,23 +13,31 @@
     = link_to image_tag('weblogo.png'), root_path
   = render :partial => "shared/login"
   .clearboth
+  %table.tabs.members_only{:cellspacing => 0,:cellpadding => 0, :align => 'center'}
+    %tr
+      %td.nav_tag
+        %strong MEMBERS ONLY:
+      %td.nav_tab=link_to "Report a Save", new_report_path
+      %td.nav_tab=link_to "How Do You Rank?", root_path
+      %td.nav_tab=link_to "Our Ten Commandments", welcome_ten_commandments_path
+      %td.nav_tab=link_to "My Account", profile_path
+
   %table.tabs{:cellspacing => 0,:cellpadding => 0,:align => 'center'}
     %tr
       %td.nav_tab=link_to "About NTFM", welcome_about_ntfm_path
-      %td.nav_tab=link_to "Report a Save", new_report_path
-      %td.nav_tab=link_to "Know the Laws", root_path
-      %td.nav_tab=link_to "Contests", welcome_contests_path
-      %td.nav_tab=link_to "Our Ten Commandments", welcome_ten_commandments_path 
-      %td.nav_tab=link_to "Contact Us", root_path
+      %td.nav_tab=link_to "Re-Metering", welcome_re_metering_path
+      %td.nav_tab=link_to "Winners", welcome_winners_path
+      %td.nav_tab=link_to "This is Stupid", welcome_this_is_stupid_path
+      %td.nav_tab=mail_to "info.ntfm@gmail.com", "Contact Us"
 %div{:class => controller.controller_name }
   = yield
 .footer
   .container_12
     %table.tabs{:cellspacing => 0,:cellpadding => 0,:align => 'center'}
       %tr
-        %td.footer_tab=link_to "ABOUT US", root_path
+        %td.footer_tab=link_to "ABOUT US", welcome_about_ntfm_path
         %td.footer_tab=link_to "REPORT A SAVE", new_report_path
         %td.footer_tab=link_to "LEARN THE LAWS", root_path
-        %td.footer_tab=link_to "MONTHLY CONTESTS", welcome_contests_path
-        %td.footer_tab=link_to "ADDITIONAL INFO", root_path
-        %td.footer_tab=link_to "CONTACT US", root_path
+        %td.footer_tab=link_to "MONTHLY CONTESTS", welcome_winners_path
+        %td.footer_tab=link_to "ADDITIONAL INFO", welcome_about_ntfm_path
+        %td.footer_tab=mail_to "info.ntfm@gmail.com", "CONTACT US"

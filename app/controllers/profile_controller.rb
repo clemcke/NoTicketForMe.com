@@ -1,5 +1,3 @@
 class ProfileController < ApplicationController
-  def index
-  end
-
+  before_filter :authenticate_user!
 end
