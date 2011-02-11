@@ -9,6 +9,7 @@ Noticketforme::Application.routes.draw do
   get "welcome/ten_commandments"
   get "welcome/contests"
   get "welcome/know_the_laws"
+  get "welcome/about_ntfm"
 
   get "activate/new"
   get "activate/in_progress"

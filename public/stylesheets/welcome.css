@@ -35,7 +35,7 @@
   line-height: 1.1em; }
 
 .why_join {
-  padding-top: 80px;
+  padding-top: 30px;
   font: Georgia;
   font-size: 18px; }
   .why_join .text {
@@ -51,7 +51,7 @@
       font-size: 30px;
       font-weight: bold; }
 
-.ten_commandments, .contests {
+.generic_page {
   font: Georgia;
   font-size: 18px;
   background: #e7e2d3;
@@ -59,7 +59,7 @@
   width: 920px;
   margin: 20px auto 40px;
   line-height: 1.5em; }
-  .ten_commandments h2, .contests h2 {
+  .generic_page h2 {
     color: #c2120f; }
-  .ten_commandments li, .contests li {
+  .generic_page li {
     margin-bottom: .5em; }
